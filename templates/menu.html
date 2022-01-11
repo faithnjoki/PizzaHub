@@ -1,0 +1,117 @@
+/Users/faith/Desktop/PizzaHub/templates/menu.html{% extends 'base.html' %}
+
+{% block content %}
+      <nav class="navbar navbar-dark bg-secondary  navbar-expand-lg">
+        <div class="container-fluid">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/menu">Menu</a>
+              </li>
+              <li class="nav-item" id="cart">
+                <img src="static/images/cart2.png" alt="cart" height="50px">
+              </li>
+        
+              
+              
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+    {% endblock %}
+
+    {% block contenttwo   %}
+    <br>
+        <div class="container">
+            
+                <div class="row">
+                  <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="static/images/pizza mushrooms.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          
+                          <p class="card-text">Enjoy your Pizza with Button Mushrooms toppings.</p>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                    <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="static/images/veg pizza.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      
+                      <p class="card-text">Enjoy your Pizza with Vegetable toppings..</p>
+                    </div>
+                  </div>
+                </div>
+                  
+                  <div class="col">
+                    <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" img src="static/images/peperoni pizza.jpeg" alt="Card image cap" height="auto">
+                    <div class="card-body">
+                      
+                      <p class="card-text">Enjoy your Pizza with Pepperoni toppings.</p>
+                    </div>
+                  </div>
+                  </div>
+
+                </div>
+            </div>
+        
+       <br><br>
+       <div class="container">
+       <p>We have pizza crusts in 3 categories,please select the <strong>Pizza Crust</strong> and <strong>Pizza Size</strong>  you would like: </p>
+       <div class="row">
+        <div class="col-3">
+         <select class="form-select " aria-label="Default select example" id="pcrust">
+           <option selected>Pizza Crusts</option>
+          <option value="1">Crispy</option>
+          <option value="2">Stuffed</option>
+          <option value="3">GluttenFree</option>
+         </select>
+        </div>
+        
+        <br>
+        
+        <br>
+       <div class="col-3" >
+         <input type="number"  id="numbeR" placeholder="Number of pizza">
+       </div>
+       </div>
+       <br><br>
+       <button type="button" id="btn">Total</button>
+       <!-- paragraph-->
+       <h2 id="paragraph"></h2>
+       <br>
+       <p>Do you want your Pizza Delivered?</p>
+       
+       <!-- check out -->
+       
+       <br>
+        <button type="submit" id="checkOut">Checkout</button> 
+       <form action="" > 
+         <br>
+       <input type="text" id="numP">Number of pizza
+       <br><br>
+       <input type="text" id="totalP">Total Cost
+       
+       </form>
+       <br><br>
+       </div>
+        
+
+    {% endblock    %}
+
