@@ -1,4 +1,4 @@
-/Users/faith/Desktop/PizzaHub/templates/menu.html{% extends 'base.html' %}
+{% extends 'base.html' %}
 
 {% block content %}
       <nav class="navbar navbar-dark bg-secondary  navbar-expand-lg">
@@ -22,7 +22,7 @@
                 <a class="nav-link active" aria-current="page" href="/menu">Menu</a>
               </li>
               <li class="nav-item" id="cart">
-                <img src="static/images/cart2.png" alt="cart" height="50px">
+                <a href="/cart"><img src="static/images/cart2.png" alt="cart" height="50px"></a>Cart
               </li>
         
               
@@ -45,6 +45,7 @@
                         <div class="card-body">
                           
                           <p class="card-text">Enjoy your Pizza with Button Mushrooms toppings.</p>
+                          <button type="button" style=" background-color: gold;">Add to Cart</button>
                         </div>
                       </div>
                   </div>
@@ -53,7 +54,8 @@
                     <img class="card-img-top" src="static/images/veg pizza.jpeg" alt="Card image cap">
                     <div class="card-body">
                       
-                      <p class="card-text">Enjoy your Pizza with Vegetable toppings..</p>
+                      <p class="card-text">Enjoy your Pizza with Vegetable toppings.</p>
+                      <button type="button" style=" background-color:gold;">Add to Cart</button>
                     </div>
                   </div>
                 </div>
@@ -62,56 +64,52 @@
                     <div class="card" style="width: 18rem;">
                     <img class="card-img-top" img src="static/images/peperoni pizza.jpeg" alt="Card image cap" height="auto">
                     <div class="card-body">
-                      
                       <p class="card-text">Enjoy your Pizza with Pepperoni toppings.</p>
+                      <button type="button" style=" background-color:gold;">Add to Cart</button>
+                    </div>
+                  </div>
+
+                  </div>
+                </div>
+                <br>
+                  <div class="row"> 
+                  <div class="col">
+                    <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" img src="static/images/beef pizza.jpeg" alt="Card image cap" height="190px">
+                    <div class="card-body">
+                      <p class="card-text">Enjoy your Pizza with Beef toppings.</p>
+                      <button type="button" style=" background-color:gold;">Add to Cart</button>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="col">
+                    <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" img src="static/images/Chicken Hawaiian pizza.jpeg" alt="Card image cap" height="190px">
+                    <div class="card-body">
+                      <p class="card-text">Enjoy your Pizza with chicken hawaiian pizza toppings.</p>
+                      <button type="button" style=" background-color:gold;">Add to Cart</button>
+                    </div>
+                  </div>
+                  </div>
+                  
+                  <div class="col">
+                    <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" img src="static/images/pizza chicken.jpeg" alt="Card image cap" height="190px">
+                    <div class="card-body">
+                      <p class="card-text">Enjoy your Pizza with Chicken toppings.</p>
+                      a<button type="button" style=" background-color:gold;">Add to Cart</button>
                     </div>
                   </div>
                   </div>
 
                 </div>
-            </div>
-        
-       <br><br>
-       <div class="container">
-       <p>We have pizza crusts in 3 categories,please select the <strong>Pizza Crust</strong> and <strong>Pizza Size</strong>  you would like: </p>
-       <div class="row">
-        <div class="col-3">
-         <select class="form-select " aria-label="Default select example" id="pcrust">
-           <option selected>Pizza Crusts</option>
-          <option value="1">Crispy</option>
-          <option value="2">Stuffed</option>
-          <option value="3">GluttenFree</option>
-         </select>
-        </div>
-        
+              </div>
         <br>
-        
-        <br>
-       <div class="col-3" >
-         <input type="number"  id="numbeR" placeholder="Number of pizza">
-       </div>
-       </div>
-       <br><br>
-       <button type="button" id="btn">Total</button>
-       <!-- paragraph-->
-       <h2 id="paragraph"></h2>
-       <br>
-       <p>Do you want your Pizza Delivered?</p>
-       
-       <!-- check out -->
-       
-       <br>
-        <button type="submit" id="checkOut">Checkout</button> 
-       <form action="" > 
-         <br>
-       <input type="text" id="numP">Number of pizza
-       <br><br>
-       <input type="text" id="totalP">Total Cost
-       
-       </form>
-       <br><br>
+    
        </div>
         
 
     {% endblock    %}
 
+
+    
