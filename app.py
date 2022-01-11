@@ -18,3 +18,7 @@ def contact():
 @app.route('/menu')
 def menu():
    return render_template ('menu.html')
+
+@app.route('/cart')
+def cart():
+   return render_template ('cart.html')
