@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% block content %}
+      <nav class="navbar navbar-dark bg-secondary  navbar-expand-lg">
+        <div class="container-fluid">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/menu">Menu</a>
+              </li>
+              
+              <li class="nav-item" id="cart">
+                <img src="static/images/cart2.png" alt="cart" height="50px">
+              </li>
+              
+              
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+    {% endblock %}
+
+    {% block contenttwo    %}
+    <br>
+    <!-- <div class="contaner"  >
+        <p>Feel free to reach Us through phone number 0700700700.</p>
+        <p>For further enquiries,Send us your email and we shall contact you. Please,Fill in the Form below:</p>
+        <form action="">
+         <input type="text" placeholder="Full Name..">
+         <br><br>
+         <input type="text" placeholder="Email Adress...">
+         <br><br>
+         <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        
+      
+        </div> -->
+        
+        <div class="container">
+            <form action="" method="POST">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">First Name...</label>
+                  <input type="text" class="form-control" placeholder="First Name" name ="first_name"  >
+                 
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Last Name...</label>
+                    <input type="text" class="form-control"  placeholder="Last Name" name ="last_name" >
+                   
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address...</label>
+                    <input type="email" class="form-control"  placeholder="Email Adress" name ="email" >
+                   
+                  </div>
+                <br><br>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+  
+    {% endblock    %}
