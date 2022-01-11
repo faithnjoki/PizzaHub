@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block content %}
+      <nav class="navbar navbar-dark bg-secondary  navbar-expand-lg">
+        <div class="container-fluid">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/menu">Menu</a>
+              </li>
+            
+              <li class="nav-item" id="cart">
+                <img src="static/images/cart2.png" alt="cart" height="50px">
+              </li>
+              
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+    {% endblock %}
+
+    {% block contenttwo   %}
+    <br><br>
+
+    <div class="container">
+        <figure>
+            <img src="static/images/home.jpeg" alt="pic"  class="img-circle" id="homepagepic">
+            <br><br>
+            <figcaption>
+                <h5> Hello to You? Welcome  to PizzaHub<h5> 
+                <h5> Welcome to our humble place where you get quality and value of your money.</h5> 
+            </figcaption>
+        </figure>
+            
+      </div>
+
+
+    {% endblock    %}
+
