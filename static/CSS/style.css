@@ -1,0 +1,10 @@
+body , html {
+background-color: antiquewhite;
+}
+#cart{
+    position: relative;
+    left:1070px;
+}
+#homepagepic {
+    border-radius: 50%;
+}
