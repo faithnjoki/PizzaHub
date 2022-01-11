@@ -3,8 +3,14 @@ background-color: antiquewhite;
 }
 #cart{
     position: relative;
-    left:1070px;
+    left:1030px;
 }
 #homepagepic {
     border-radius: 50%;
+}
+footer {
+    position: relative;
+    bottom: -80px;
+    left: 1200px;
+
 }
